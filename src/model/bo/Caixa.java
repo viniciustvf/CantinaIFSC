@@ -84,6 +84,12 @@ public class Caixa {
 
     @Override
     public String toString() {
-        return "Caixa{" + "id=" + id + ", dataHoraAbertura=" + dataHoraAbertura + ", dataHoraFechamento=" + dataHoraFechamento + ", valorAbertura=" + valorAbertura + ", valorFechamento=" + valorFechamento + ", observacao=" + observacao + ", status=" + status + '}';
+        return this.getId() + ", " 
+                + this.getDataHoraAbertura() + ", "
+                + this.getDataHoraFechamento() + ", "
+                + this.getValorAbertura()
+                + this.getValorFechamento()
+                + this.getStatus()
+                + this.getObservacao();
     }
 }

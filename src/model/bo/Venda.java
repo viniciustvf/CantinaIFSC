@@ -75,6 +75,11 @@ public class Venda {
 
     @Override
     public String toString() {
-        return "Venda{" + "id=" + id + ", dataHoraVenda=" + dataHoraVenda + ", valorDesconto=" + valorDesconto + ", flagTipoDesconto=" + flagTipoDesconto + ", observacao=" + observacao + ", status=" + status + '}';
+        return this.getId() + ", " 
+                + this.getDataHoraVenda() + ", "
+                + this.getFlagTipoDesconto() + ", "
+                + this.getValorDesconto() + ", "
+                + this.getObservacao() + ", "
+                + this.getStatus();
     }
 }

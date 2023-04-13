@@ -53,6 +53,9 @@ public class ItemCompra {
 
     @Override
     public String toString() {
-        return "ItemCompra{" + "id=" + id + ", qtdProduto=" + qtdProduto + ", valorUnitario=" + valorUnitario + ", status=" + status + '}';
+        return this.getId() + ", " 
+                + this.getQtdProduto()+ ", "
+                + this.getValorUnitario() + ", "
+                + this.getStatus();     
     }
 }

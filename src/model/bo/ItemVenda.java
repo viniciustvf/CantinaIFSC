@@ -53,6 +53,9 @@ public class ItemVenda {
 
     @Override
     public String toString() {
-        return "ItemVenda{" + "id=" + id + ", qtdProduto=" + qtdProduto + ", valorUnitario=" + valorUnitario + ", status=" + status + '}';
+        return this.getId() + ", " 
+                + this.getQtdProduto()+ ", "
+                + this.getValorUnitario() + ", "
+                + this.getStatus();  
     } 
 }

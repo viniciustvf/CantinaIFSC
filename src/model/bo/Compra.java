@@ -84,6 +84,12 @@ public class Compra {
 
     @Override
     public String toString() {
-        return "Compra{" + "id=" + id + ", numeroNf=" + numeroNf + ", dataHoraCompra=" + dataHoraCompra + ", valorDesconto=" + valorDesconto + ", flagTipoDesconto=" + flagTipoDesconto + ", status=" + status + ", observacao=" + observacao + '}';
+        return this.getId() + ", " 
+                + this.getDataHoraCompra() + ", "
+                + this.getFlagTipoDesconto() + ", "
+                + this.getNumeroNf() + ", "
+                + this.getStatus() + ", "
+                + this.getValorDesconto() + ", "
+                + this.getObservacao();
     }
 }

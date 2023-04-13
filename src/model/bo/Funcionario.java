@@ -2,7 +2,7 @@
 package model.bo;
 
 
-public class Funcionario {
+public class Funcionario extends Pessoa{
     
     private String cpf;
     private String rg;
@@ -18,6 +18,14 @@ public class Funcionario {
         this.usuario = usuario;
         this.senha = senha;
     }
+
+    public Funcionario(String cpf, String rg, String usuario, String senha, int id, String nome, String fone1, String fone, String email, char status, String complementoEndereco) {
+        super(id, nome, fone1, fone, email, status, complementoEndereco);
+        this.cpf = cpf;
+        this.rg = rg;
+        this.usuario = usuario;
+        this.senha = senha;
+    }    
 
     public String getCpf() {
         return cpf;
@@ -53,6 +61,9 @@ public class Funcionario {
 
     @Override
     public String toString() {
-        return "Funcionario{" + "cpf=" + cpf + ", rg=" + rg + ", usuario=" + usuario + ", senha=" + senha + '}';
+        return this.getCpf() + ", " 
+                + this.getRg() + ", "
+                + this.getSenha() + ", "
+                + this.getUsuario();
     } 
 }

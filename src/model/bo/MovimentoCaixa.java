@@ -74,6 +74,11 @@ public class MovimentoCaixa {
 
     @Override
     public String toString() {
-        return "MovimentoCaixa{" + "id=" + id + ", dataHoraMovimento=" + dataHoraMovimento + ", valorMovimento=" + valorMovimento + ", observacao=" + observacao + ", flagTipoMovimento=" + flagTipoMovimento + ", status=" + status + '}';
+        return this.getId() + ", " 
+                + this.getDataHoraMovimento()+ ", "
+                + this.getFlagTipoMovimento() + ", "
+                + this.getValorMovimento() + ", "
+                + this.getStatus() + ", "
+                + this.getObservacao();
     }
 }

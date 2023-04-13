@@ -6,6 +6,9 @@ public class Endereco {
     private String cep;
     private String logradouro;
     private char status;
+    
+    private Cidade cidade;
+    private Bairro bairro;
 
     public Endereco() {
     }
@@ -49,8 +52,29 @@ public class Endereco {
         this.status = status;
     }
 
+    public Cidade getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(Cidade cidade) {
+        this.cidade = cidade;
+    }
+
+    public Bairro getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(Bairro bairro) {
+        this.bairro = bairro;
+    }
+
     @Override
     public String toString() {
-        return "Endereco{" + "id=" + id + ", cep=" + cep + ", logradouro=" + logradouro + ", status=" + status + '}';
+        return  this.getCep()+ ", " 
+                + this.getLogradouro() + ", " 
+                + this.getCep() + ", "
+                + this.bairro.getDescricao()
+                + this.cidade.getDescricao()
+                + this.getStatus();
     } 
 }

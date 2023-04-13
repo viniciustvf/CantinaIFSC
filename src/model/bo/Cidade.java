@@ -43,7 +43,9 @@ public class Cidade {
 
     @Override
     public String toString() {
-        return "Cidade{" + "id=" + id + ", descricao=" + descricao + ", uf=" + uf + '}';
+        return this.getId() + ", " 
+                + this.getDescricao() + ", "
+                + this.getUf();
     }
     
 }

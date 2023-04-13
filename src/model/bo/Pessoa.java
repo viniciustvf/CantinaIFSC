@@ -1,7 +1,7 @@
 package model.bo;
 
 
-public class Pessoa {
+public abstract class Pessoa {
     
     private int id;
     private String nome;
@@ -10,6 +10,8 @@ public class Pessoa {
     private String email;
     private char status;
     private String complementoEndereco;
+    
+    private Endereco endereco;
 
     public Pessoa() {
     }
@@ -80,8 +82,20 @@ public class Pessoa {
         this.complementoEndereco = complementoEndereco;
     }
 
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+    
     @Override
     public String toString() {
-        return "Pessoa{" + "id=" + id + ", nome=" + nome + ", fone1=" + fone1 + ", fone=" + fone + ", email=" + email + ", status=" + status + ", complementoEndereco=" + complementoEndereco + '}';
+        return this.getComplementoEndereco() + ", "
+                + this.getEmail() + ", " 
+                + this.getFone() + ", "
+                + this.getFone1() + ", "
+                + this.getNome();
     }
 }

@@ -125,6 +125,15 @@ public class Contas {
 
     @Override
     public String toString() {
-        return "Contas{" + "id=" + id + ", dataHoraEmissao=" + dataHoraEmissao + ", dataVencimento=" + dataVencimento + ", dataQuitacao=" + dataQuitacao + ", valorEmitido=" + valorEmitido + ", valorDesconto=" + valorDesconto + ", valorAcrescimo=" + valorAcrescimo + ", valorQuitado=" + valorQuitado + ", observacao=" + observacao + ", flagTipoConta=" + flagTipoConta + ", status=" + status + '}';
+        return this.getId() + ", " 
+                + this.getDataHoraEmissao() + ", "
+                + this.getDataQuitacao() + ", "
+                + this.getDataVencimento() + ", "
+                + this.getFlagTipoConta() + ", "
+                + this.getValorAcrescimo() + ", "
+                + this.getValorDesconto() + ", "
+                + this.getValorEmitido() + ", "
+                + this.getValorQuitado() + ", "
+                + this.getStatus();
     }
 }

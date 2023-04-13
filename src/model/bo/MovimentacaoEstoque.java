@@ -74,6 +74,11 @@ public class MovimentacaoEstoque {
 
     @Override
     public String toString() {
-        return "MovimentacaoEstoque{" + "id=" + id + ", dataHoraMovimento=" + dataHoraMovimento + ", flagTipoMovimento=" + flagTipoMovimento + ", qtdMovimentada=" + qtdMovimentada + ", observacaoMovimento=" + observacaoMovimento + ", status=" + status + '}';
+        return this.getId() + ", " 
+                + this.getDataHoraMovimento() + ", "
+                + this.getFlagTipoMovimento() + ", "
+                + this.getQtdMovimentada() + ", "
+                + this.getStatus() + ", "
+                + this.getObservacaoMovimento();
     }  
 }

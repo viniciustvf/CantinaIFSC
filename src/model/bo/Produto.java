@@ -53,6 +53,9 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "Produto{" + "id=" + id + ", descricao=" + descricao + ", codigobarra=" + codigoBarra + ", status=" + status + '}';
+        return this.getId() + ", " 
+                + this.getCodigobarra() + ", "
+                + this.getDescricao() + ", "
+                + this.getStatus();
     }
 }

@@ -53,6 +53,9 @@ public class Carteirinha {
 
     @Override
     public String toString() {
-        return "Carteirinha{" + "id=" + id + ", codigoBarra=" + codigoBarra + ", dataGeracao=" + dataGeracao + ", dataCancelamento=" + dataCancelamento + '}';
+        return this.getId() + ", " 
+                + this.getCodigoBarra() + ", "
+                + this.getDataGeracao() + ", "
+                + this.getDataCancelamento();
     }
 }   

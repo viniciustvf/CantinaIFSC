@@ -2,7 +2,7 @@
 package model.bo;
 
 
-public class Fornecedor {
+public class Fornecedor extends Pessoa{
     
     private String cnpj;
     private String inscricaoEstadual;
@@ -12,6 +12,13 @@ public class Fornecedor {
     }
 
     public Fornecedor(String cnpj, String inscricaoEstadual, String razaoSocial) {
+        this.cnpj = cnpj;
+        this.inscricaoEstadual = inscricaoEstadual;
+        this.razaoSocial = razaoSocial;
+    }
+
+    public Fornecedor(String cnpj, String inscricaoEstadual, String razaoSocial, int id, String nome, String fone1, String fone, String email, char status, String complementoEndereco) {
+        super(id, nome, fone1, fone, email, status, complementoEndereco);
         this.cnpj = cnpj;
         this.inscricaoEstadual = inscricaoEstadual;
         this.razaoSocial = razaoSocial;
@@ -43,6 +50,8 @@ public class Fornecedor {
 
     @Override
     public String toString() {
-        return "Fornecedor{" + "cnpj=" + cnpj + ", inscricaoEstadual=" + inscricaoEstadual + ", razaoSocial=" + razaoSocial + '}';
+        return this.getCnpj() + ", " 
+                + this.getInscricaoEstadual() + ", "
+                + this.getRazaoSocial();
     }
 }
