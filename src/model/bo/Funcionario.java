@@ -19,14 +19,6 @@ public class Funcionario extends Pessoa{
         this.senha = senha;
     }
 
-    public Funcionario(String cpf, String rg, String usuario, String senha, int id, String nome, String fone1, String fone, String email, char status, String complementoEndereco) {
-        super(id, nome, fone1, fone, email, status, complementoEndereco);
-        this.cpf = cpf;
-        this.rg = rg;
-        this.usuario = usuario;
-        this.senha = senha;
-    }    
-
     public String getCpf() {
         return cpf;
     }

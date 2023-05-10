@@ -1,12 +1,10 @@
 package model.bo;
-
-
 public abstract class Pessoa {
-    
+   
     private int id;
     private String nome;
     private String fone1;
-    private String fone;
+    private String fone2;
     private String email;
     private char status;
     private String complementoEndereco;
@@ -16,14 +14,15 @@ public abstract class Pessoa {
     public Pessoa() {
     }
 
-    public Pessoa(int id, String nome, String fone1, String fone, String email, char status, String complementoEndereco) {
+    public Pessoa(int id, String nome, String fone1, String fone2, String email, char status, String complementoEndereco, Endereco endereco) {
         this.id = id;
         this.nome = nome;
         this.fone1 = fone1;
-        this.fone = fone;
+        this.fone2 = fone2;
         this.email = email;
         this.status = status;
         this.complementoEndereco = complementoEndereco;
+        this.endereco = endereco;
     }
 
     public int getId() {
@@ -50,12 +49,12 @@ public abstract class Pessoa {
         this.fone1 = fone1;
     }
 
-    public String getFone() {
-        return fone;
+    public String getFone2() {
+        return fone2;
     }
 
-    public void setFone(String fone) {
-        this.fone = fone;
+    public void setFone2(String fone2) {
+        this.fone2 = fone2;
     }
 
     public String getEmail() {
@@ -89,13 +88,20 @@ public abstract class Pessoa {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
-    
+
     @Override
     public String toString() {
-        return this.getComplementoEndereco() + ", "
-                + this.getEmail() + ", " 
-                + this.getFone() + ", "
-                + this.getFone1() + ", "
-                + this.getNome();
+        return this.getId() + ", " +
+                this.getNome()+ ", " +
+                this.getFone1()+ ", " +
+                this.getFone2()+ ", " +
+                this.getEmail()+ ", " +
+                this.getEndereco().toString()+ ", " +
+                this.getComplementoEndereco()+ ", " +
+                this.getStatus();
     }
+    
+    
+    
+    
 }
