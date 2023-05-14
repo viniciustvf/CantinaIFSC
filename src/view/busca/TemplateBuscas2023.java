@@ -43,21 +43,12 @@ public class TemplateBuscas2023 extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
-<<<<<<< HEAD
         jPanTitulo.setBackground(new java.awt.Color(102, 102, 255));
         jPanTitulo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanTitulo.setForeground(new java.awt.Color(153, 255, 0));
 
         jLabelTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabelTitulo.setForeground(new java.awt.Color(102, 255, 0));
-=======
-        jPanTitulo.setBackground(new java.awt.Color(255, 153, 51));
-        jPanTitulo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanTitulo.setForeground(new java.awt.Color(153, 255, 0));
-
-        jLabelTitulo.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabelTitulo.setForeground(new java.awt.Color(0, 0, 0));
->>>>>>> 2c824995e6bf2572fe90ba54713058fb21b292b5
         jLabelTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelTitulo.setText("Titulo");
 

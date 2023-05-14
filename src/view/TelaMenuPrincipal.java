@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -6,9 +5,9 @@
  */
 package view;
 
-import view.cadastro.TelaCadastroBairro;
 import controller.ControllerCadastroBairro;
 import javax.swing.JOptionPane;
+import view.cadastro.TelaCadastroBairro;
 
 /**
  *
@@ -23,18 +22,6 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
         initComponents();
         setExtendedState(MAXIMIZED_BOTH);
         
-=======
-
-package view;
-
-
-public class TelaMenuPrincipal extends javax.swing.JFrame {
-
-    
-    public TelaMenuPrincipal() {
-        initComponents();
-        setExtendedState(MAXIMIZED_BOTH);
->>>>>>> 2c824995e6bf2572fe90ba54713058fb21b292b5
     }
 
     /**
@@ -46,7 +33,6 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-<<<<<<< HEAD
         jPanelMenu = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jMenuBarPrincipal = new javax.swing.JMenuBar();
@@ -81,11 +67,11 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
         jPanelMenu.setLayout(jPanelMenuLayout);
         jPanelMenuLayout.setHorizontalGroup(
             jPanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1443, Short.MAX_VALUE)
+            .addGap(0, 1374, Short.MAX_VALUE)
         );
         jPanelMenuLayout.setVerticalGroup(
             jPanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 258, Short.MAX_VALUE)
+            .addGap(0, 265, Short.MAX_VALUE)
         );
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/SisCan_1.png"))); // NOI18N
@@ -174,52 +160,24 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
         jMenuBarPrincipal.add(jMenuAjuda);
 
         setJMenuBar(jMenuBarPrincipal);
-=======
-        jLabel1 = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1Cadastro = new javax.swing.JMenu();
-        jMenu2Movimentos = new javax.swing.JMenu();
-        jMenu3Relatorios = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/backgroundCantina.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
-
-        jMenu1Cadastro.setText("Cadastro");
-        jMenuBar1.add(jMenu1Cadastro);
-
-        jMenu2Movimentos.setText("Movimentos");
-        jMenuBar1.add(jMenu2Movimentos);
-
-        jMenu3Relatorios.setText("Relatórios");
-        jMenuBar1.add(jMenu3Relatorios);
-
-        jMenu4.setText("Ajuda");
-        jMenuBar1.add(jMenu4);
-
-        setJMenuBar(jMenuBar1);
->>>>>>> 2c824995e6bf2572fe90ba54713058fb21b292b5
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-<<<<<<< HEAD
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanelMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(1374, 1374, 1374))
+                .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1396, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLabel1)
-                .addGap(468, 468, 468)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanelMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
@@ -242,18 +200,6 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
         telaCadastroBairro.setVisible(true);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
-=======
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        pack();
-    }// </editor-fold>//GEN-END:initComponents
-
->>>>>>> 2c824995e6bf2572fe90ba54713058fb21b292b5
     /**
      * @param args the command line arguments
      */
@@ -290,7 +236,6 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-<<<<<<< HEAD
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
@@ -315,17 +260,4 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JPopupMenu.Separator jSeparator3;
     // End of variables declaration//GEN-END:variables
-=======
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenu jMenu1Cadastro;
-    private javax.swing.JMenu jMenu2Movimentos;
-    private javax.swing.JMenu jMenu3Relatorios;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenuBar jMenuBar1;
-    // End of variables declaration//GEN-END:variables
-
-    private void setExtendedState() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
->>>>>>> 2c824995e6bf2572fe90ba54713058fb21b292b5
 }
