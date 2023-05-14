@@ -3,18 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view.busca;
+package view;
+
+import view.busca.TemplateBuscas2023;
 
 /**
  *
  * @author house
  */
-public class TemplateBuscas2023 extends javax.swing.JDialog {
+public class TelaBuscaBairro extends javax.swing.JDialog {
 
     /**
      * Creates new form TemplateBuscas2023
      */
-    public TemplateBuscas2023(java.awt.Frame parent, boolean modal) {
+    public TelaBuscaBairro(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -41,25 +43,17 @@ public class TemplateBuscas2023 extends javax.swing.JDialog {
         jButtonFiltrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Busca de Bairros");
         setResizable(false);
 
-<<<<<<< HEAD
-        jPanTitulo.setBackground(new java.awt.Color(102, 102, 255));
-        jPanTitulo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanTitulo.setForeground(new java.awt.Color(153, 255, 0));
-
-        jLabelTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabelTitulo.setForeground(new java.awt.Color(102, 255, 0));
-=======
-        jPanTitulo.setBackground(new java.awt.Color(255, 153, 51));
+        jPanTitulo.setBackground(new java.awt.Color(255, 204, 102));
         jPanTitulo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanTitulo.setForeground(new java.awt.Color(153, 255, 0));
 
         jLabelTitulo.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabelTitulo.setForeground(new java.awt.Color(0, 0, 0));
->>>>>>> 2c824995e6bf2572fe90ba54713058fb21b292b5
         jLabelTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelTitulo.setText("Titulo");
+        jLabelTitulo.setText("Bairro");
 
         javax.swing.GroupLayout jPanTituloLayout = new javax.swing.GroupLayout(jPanTitulo);
         jPanTitulo.setLayout(jPanTituloLayout);
@@ -117,16 +111,20 @@ public class TemplateBuscas2023 extends javax.swing.JDialog {
 
             },
             new String [] {
-                "Title 1"
+                "ID", "Descrição"
             }
         ));
         jScrollPane1.setViewportView(jTableDados);
+        if (jTableDados.getColumnModel().getColumnCount() > 0) {
+            jTableDados.getColumnModel().getColumn(0).setMaxWidth(70);
+            jTableDados.getColumnModel().getColumn(1).setMaxWidth(550);
+        }
 
         javax.swing.GroupLayout jPanDadosLayout = new javax.swing.GroupLayout(jPanDados);
         jPanDados.setLayout(jPanDadosLayout);
         jPanDadosLayout.setHorizontalGroup(
             jPanDadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         jPanDadosLayout.setVerticalGroup(
             jPanDadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -226,7 +224,7 @@ public class TemplateBuscas2023 extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                TemplateBuscas2023 dialog = new TemplateBuscas2023(new javax.swing.JFrame(), true);
+                TelaBuscaBairro dialog = new TelaBuscaBairro(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
