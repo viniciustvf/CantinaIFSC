@@ -8,6 +8,8 @@ package view;
 import controller.ControllerCadastroBairro;
 import javax.swing.JOptionPane;
 import view.cadastro.TelaCadastroBairro;
+import view.cadastro.TelaCadastroCliente;
+import view.cadastro.TelaCadastroFornecedor;
 
 /**
  *
@@ -21,7 +23,6 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
     public TelaMenuPrincipal() {
         initComponents();
         setExtendedState(MAXIMIZED_BOTH);
-        
     }
 
     /**
@@ -37,9 +38,9 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jMenuBarPrincipal = new javax.swing.JMenuBar();
         jMenuCadastros = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuCadastroCliente = new javax.swing.JMenuItem();
+        jMenuCadastroFornecedor = new javax.swing.JMenuItem();
+        jMenuCadastroFuncionario = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
@@ -79,30 +80,32 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
         jMenuCadastros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Bee.png"))); // NOI18N
         jMenuCadastros.setText("Cadastros");
 
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Boss_1.png"))); // NOI18N
-        jMenuItem1.setText("Cliente");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuCadastroCliente.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
+        jMenuCadastroCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Boss_1.png"))); // NOI18N
+        jMenuCadastroCliente.setText("Cliente");
+        jMenuCadastroCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jMenuCadastroClienteActionPerformed(evt);
             }
         });
-        jMenuCadastros.add(jMenuItem1);
+        jMenuCadastros.add(jMenuCadastroCliente);
 
-        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem2.setText("Fornecedor");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        jMenuCadastroFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuCadastroFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Company.png"))); // NOI18N
+        jMenuCadastroFornecedor.setText("Fornecedor");
+        jMenuCadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                jMenuCadastroFornecedorActionPerformed(evt);
             }
         });
-        jMenuCadastros.add(jMenuItem2);
+        jMenuCadastros.add(jMenuCadastroFornecedor);
 
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Diagram.png"))); // NOI18N
-        jMenuItem3.setText("Funcionário");
-        jMenuCadastros.add(jMenuItem3);
+        jMenuCadastroFuncionario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Diagram.png"))); // NOI18N
+        jMenuCadastroFuncionario.setText("Funcionário");
+        jMenuCadastros.add(jMenuCadastroFuncionario);
         jMenuCadastros.add(jSeparator1);
 
+        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Black pin.png"))); // NOI18N
         jMenuItem4.setText("Bairro");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,16 +114,20 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
         });
         jMenuCadastros.add(jMenuItem4);
 
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Black pin.png"))); // NOI18N
         jMenuItem5.setText("Cidade");
         jMenuCadastros.add(jMenuItem5);
 
+        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Black pin.png"))); // NOI18N
         jMenuItem6.setText("Endereço");
         jMenuCadastros.add(jMenuItem6);
         jMenuCadastros.add(jSeparator2);
 
+        jMenuItemCarteirinha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Message.png"))); // NOI18N
         jMenuItemCarteirinha.setText("Carteirinha");
         jMenuCadastros.add(jMenuItemCarteirinha);
 
+        jMenuItemProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Buy.png"))); // NOI18N
         jMenuItemProduto.setText("Produto");
         jMenuItemProduto.setName(""); // NOI18N
         jMenuCadastros.add(jMenuItemProduto);
@@ -186,13 +193,15 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        JOptionPane.showMessageDialog(null, "Rá glu Glu");
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    private void jMenuCadastroClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuCadastroClienteActionPerformed
+        TelaCadastroCliente telaCadastroCliente = new TelaCadastroCliente(this, true);
+        telaCadastroCliente.setVisible(true);
+    }//GEN-LAST:event_jMenuCadastroClienteActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        JOptionPane.showMessageDialog(null, "Ye Yé");
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    private void jMenuCadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuCadastroFornecedorActionPerformed
+        TelaCadastroFornecedor telaCadastroFornecedor = new TelaCadastroFornecedor(this, true);
+        telaCadastroFornecedor.setVisible(true);
+    }//GEN-LAST:event_jMenuCadastroFornecedorActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         TelaCadastroBairro telaCadastroBairro = new TelaCadastroBairro(null, true);
@@ -241,12 +250,12 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenuAjuda;
     private javax.swing.JMenuBar jMenuBarPrincipal;
+    private javax.swing.JMenuItem jMenuCadastroCliente;
+    private javax.swing.JMenuItem jMenuCadastroFornecedor;
+    private javax.swing.JMenuItem jMenuCadastroFuncionario;
     private javax.swing.JMenu jMenuCadastros;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem11;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;

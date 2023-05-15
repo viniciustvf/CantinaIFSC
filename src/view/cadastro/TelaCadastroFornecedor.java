@@ -13,6 +13,8 @@ public class TelaCadastroFornecedor extends javax.swing.JDialog {
 
     /**
      * Creates new form TemplateCadastros2023
+     * @param parent
+     * @param modal
      */
     public TelaCadastroFornecedor(java.awt.Frame parent, boolean modal) {
         super(parent, modal);

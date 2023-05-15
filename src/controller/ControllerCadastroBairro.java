@@ -3,8 +3,8 @@ package controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import utilities.Utilities;
-import view.TelaBuscaBairro;
-import view.TelaCadastroBairro;
+import view.busca.TelaBuscaBairro;
+import view.cadastro.TelaCadastroBairro;
 
 public class ControllerCadastroBairro implements ActionListener {
 
