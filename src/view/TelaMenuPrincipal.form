@@ -6,19 +6,16 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenuCadastros">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagens/Bee.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Cadastros"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuCadastroCliente">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="F2"/>
+                  <KeyStroke key="F1"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/Boss_1.png"/>
+                  <Image iconType="3" name="/imagens/newicons/PERSON.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cliente"/>
               </Properties>
@@ -29,10 +26,10 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuCadastroFornecedor">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Ctrl+F"/>
+                  <KeyStroke key="F2"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/Company.png"/>
+                  <Image iconType="3" name="/imagens/newicons/FORNECEDOR.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Fornecedor"/>
               </Properties>
@@ -42,8 +39,11 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuCadastroFuncionario">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="F3"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/Diagram.png"/>
+                  <Image iconType="3" name="/imagens/newicons/FUNCIONARIO.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Funcion&#xe1;rio"/>
               </Properties>
@@ -56,7 +56,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/Black pin.png"/>
+                  <Image iconType="3" name="/imagens/newicons/ENDERECO.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Bairro"/>
               </Properties>
@@ -67,7 +67,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/Black pin.png"/>
+                  <Image iconType="3" name="/imagens/newicons/ENDERECO.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cidade"/>
               </Properties>
@@ -78,7 +78,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/Black pin.png"/>
+                  <Image iconType="3" name="/imagens/newicons/ENDERECO.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Endere&#xe7;o"/>
               </Properties>
@@ -91,7 +91,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCarteirinha">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/Message.png"/>
+                  <Image iconType="3" name="/imagens/newicons/WALLET.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Carteirinha"/>
               </Properties>
@@ -102,7 +102,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemProduto">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/Buy.png"/>
+                  <Image iconType="3" name="/imagens/newicons/LANCHE.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Produto"/>
                 <Property name="name" type="java.lang.String" value="" noResource="true"/>
@@ -115,8 +115,11 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemSair">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="ESCAPE"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/Exit.png"/>
+                  <Image iconType="3" name="/imagens/newicons/SAIR.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Sair"/>
                 <Property name="name" type="java.lang.String" value="JMISair" noResource="true"/>
@@ -140,7 +143,7 @@
                 <MenuItem class="javax.swing.JMenuItem" name="jMenuItem10">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/imagens/Down.png"/>
+                      <Image iconType="3" name="/imagens/newicons/PAGAR.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Pagar"/>
                   </Properties>
@@ -148,19 +151,13 @@
                 <MenuItem class="javax.swing.JMenuItem" name="jMenuItem11">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/imagens/Dollar.png"/>
+                      <Image iconType="3" name="/imagens/newicons/RECEBER.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Receber"/>
                   </Properties>
                 </MenuItem>
               </SubComponents>
             </Menu>
-            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="jCheckBoxMenuItem1">
-              <Properties>
-                <Property name="selected" type="boolean" value="true"/>
-                <Property name="text" type="java.lang.String" value="Item com CheckBox"/>
-              </Properties>
-            </MenuItem>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenuRelatorios">

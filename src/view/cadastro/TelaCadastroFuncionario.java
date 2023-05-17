@@ -5,6 +5,10 @@
  */
 package view.cadastro;
 
+import javax.swing.JFrame;
+import view.busca.TelaBuscaBairro;
+import view.busca.TelaBuscaFuncionario;
+
 /**
  *
  * @author house
@@ -41,9 +45,9 @@ public class TelaCadastroFuncionario extends javax.swing.JDialog {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(100, 176, 111));
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 
-        jBNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Create.png"))); // NOI18N
+        jBNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/newicons/ADD.png"))); // NOI18N
         jBNovo.setText("Novo");
         jBNovo.setPreferredSize(new java.awt.Dimension(110, 35));
         jBNovo.addActionListener(new java.awt.event.ActionListener() {
@@ -52,7 +56,7 @@ public class TelaCadastroFuncionario extends javax.swing.JDialog {
             }
         });
 
-        jBCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Cancel.png"))); // NOI18N
+        jBCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/newicons/FECHAR.png"))); // NOI18N
         jBCancelar.setText("Cancelar");
         jBCancelar.setEnabled(false);
         jBCancelar.setPreferredSize(new java.awt.Dimension(110, 35));
@@ -62,7 +66,7 @@ public class TelaCadastroFuncionario extends javax.swing.JDialog {
             }
         });
 
-        jBGravar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/OK.png"))); // NOI18N
+        jBGravar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/newicons/UPLOAD.png"))); // NOI18N
         jBGravar.setText("Gravar");
         jBGravar.setEnabled(false);
         jBGravar.setPreferredSize(new java.awt.Dimension(110, 35));
@@ -72,11 +76,16 @@ public class TelaCadastroFuncionario extends javax.swing.JDialog {
             }
         });
 
-        jBBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Find.png"))); // NOI18N
+        jBBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/newicons/FIND.png"))); // NOI18N
         jBBuscar.setText("Buscar");
         jBBuscar.setPreferredSize(new java.awt.Dimension(110, 35));
+        jBBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBBuscarActionPerformed(evt);
+            }
+        });
 
-        jBSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Exit.png"))); // NOI18N
+        jBSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/newicons/SAIR.png"))); // NOI18N
         jBSair.setText("Sair");
         jBSair.setPreferredSize(new java.awt.Dimension(110, 35));
         jBSair.addActionListener(new java.awt.event.ActionListener() {
@@ -86,7 +95,7 @@ public class TelaCadastroFuncionario extends javax.swing.JDialog {
         });
 
         jLabel1.setFont(new java.awt.Font("Microsoft YaHei", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Cadastro Funcionario");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -172,6 +181,11 @@ public class TelaCadastroFuncionario extends javax.swing.JDialog {
     private void jBSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSairActionPerformed
         dispose();
     }//GEN-LAST:event_jBSairActionPerformed
+
+    private void jBBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBBuscarActionPerformed
+        TelaBuscaFuncionario telaBuscaFuncionario = new TelaBuscaFuncionario(new JFrame(),true);
+        telaBuscaFuncionario.setVisible(true);
+    }//GEN-LAST:event_jBBuscarActionPerformed
 
     /**
      * @param args the command line arguments
