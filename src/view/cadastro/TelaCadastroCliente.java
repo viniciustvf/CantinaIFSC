@@ -5,6 +5,9 @@
  */
 package view.cadastro;
 
+import javax.swing.JFrame;
+import view.busca.TelaBuscaCliente;
+
 /**
  *
  * @author house
@@ -62,8 +65,6 @@ public class TelaCadastroCliente extends javax.swing.JDialog {
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
         );
 
-        jLabel1.getAccessibleContext().setAccessibleName("Cliente");
-
         getContentPane().add(jPanTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 629, -1));
 
         jPanDados.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -104,6 +105,11 @@ public class TelaCadastroCliente extends javax.swing.JDialog {
         jBBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Find.png"))); // NOI18N
         jBBuscar.setText("Buscar");
         jBBuscar.setPreferredSize(new java.awt.Dimension(110, 35));
+        jBBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBBuscarActionPerformed(evt);
+            }
+        });
         jPanBotoes.add(jBBuscar);
 
         jBSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Exit.png"))); // NOI18N
@@ -116,6 +122,11 @@ public class TelaCadastroCliente extends javax.swing.JDialog {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBBuscarActionPerformed
+        TelaBuscaCliente telaBuscaCliente = new TelaBuscaCliente(new JFrame(), true);
+        telaBuscaCliente.setVisible(true);
+    }//GEN-LAST:event_jBBuscarActionPerformed
 
     /**
      * @param args the command line arguments

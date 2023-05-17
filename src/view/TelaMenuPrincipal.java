@@ -6,7 +6,6 @@
 package view;
 
 import controller.ControllerCadastroBairro;
-import javax.swing.JOptionPane;
 import view.cadastro.TelaCadastroBairro;
 import view.cadastro.TelaCadastroCliente;
 import view.cadastro.TelaCadastroFornecedor;
