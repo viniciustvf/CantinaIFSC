@@ -7,8 +7,13 @@ package view;
 
 import controller.ControllerCadastroBairro;
 import view.cadastro.TelaCadastroBairro;
+import view.cadastro.TelaCadastroCarteirinha;
+import view.cadastro.TelaCadastroCidade;
 import view.cadastro.TelaCadastroCliente;
+import view.cadastro.TelaCadastroEndereco;
 import view.cadastro.TelaCadastroFornecedor;
+import view.cadastro.TelaCadastroFuncionario;
+import view.cadastro.TelaCadastroProduto;
 
 /**
  *
@@ -101,6 +106,11 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
 
         jMenuCadastroFuncionario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Diagram.png"))); // NOI18N
         jMenuCadastroFuncionario.setText("Funcionário");
+        jMenuCadastroFuncionario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuCadastroFuncionarioActionPerformed(evt);
+            }
+        });
         jMenuCadastros.add(jMenuCadastroFuncionario);
         jMenuCadastros.add(jSeparator1);
 
@@ -115,26 +125,51 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
 
         jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Black pin.png"))); // NOI18N
         jMenuItem5.setText("Cidade");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         jMenuCadastros.add(jMenuItem5);
 
         jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Black pin.png"))); // NOI18N
         jMenuItem6.setText("Endereço");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
         jMenuCadastros.add(jMenuItem6);
         jMenuCadastros.add(jSeparator2);
 
         jMenuItemCarteirinha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Message.png"))); // NOI18N
         jMenuItemCarteirinha.setText("Carteirinha");
+        jMenuItemCarteirinha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCarteirinhaActionPerformed(evt);
+            }
+        });
         jMenuCadastros.add(jMenuItemCarteirinha);
 
         jMenuItemProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Buy.png"))); // NOI18N
         jMenuItemProduto.setText("Produto");
         jMenuItemProduto.setName(""); // NOI18N
+        jMenuItemProduto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemProdutoActionPerformed(evt);
+            }
+        });
         jMenuCadastros.add(jMenuItemProduto);
         jMenuCadastros.add(jSeparator3);
 
         jMenuItemSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Exit.png"))); // NOI18N
         jMenuItemSair.setText("Sair");
         jMenuItemSair.setName("JMISair"); // NOI18N
+        jMenuItemSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemSairActionPerformed(evt);
+            }
+        });
         jMenuCadastros.add(jMenuItemSair);
 
         jMenuBarPrincipal.add(jMenuCadastros);
@@ -204,9 +239,37 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         TelaCadastroBairro telaCadastroBairro = new TelaCadastroBairro(null, true);
-        ControllerCadastroBairro controllerCadastroBairro = new ControllerCadastroBairro(telaCadastroBairro);
         telaCadastroBairro.setVisible(true);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuCadastroFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuCadastroFuncionarioActionPerformed
+        TelaCadastroFuncionario telaCadastroFuncionario = new TelaCadastroFuncionario(new javax.swing.JFrame(), true);
+        telaCadastroFuncionario.setVisible(true);
+    }//GEN-LAST:event_jMenuCadastroFuncionarioActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        TelaCadastroCidade telaCadastroCidade = new TelaCadastroCidade(new javax.swing.JFrame(), true);
+        telaCadastroCidade.setVisible(true);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        TelaCadastroEndereco telaCadastroEndereco = new TelaCadastroEndereco(new javax.swing.JFrame(), true);
+        telaCadastroEndereco.setVisible(true);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void jMenuItemCarteirinhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCarteirinhaActionPerformed
+        TelaCadastroCarteirinha telaCadastroCarteirinha = new TelaCadastroCarteirinha(new javax.swing.JFrame(), true);
+        telaCadastroCarteirinha.setVisible(true);
+    }//GEN-LAST:event_jMenuItemCarteirinhaActionPerformed
+
+    private void jMenuItemProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemProdutoActionPerformed
+        TelaCadastroProduto telaCadastroProduto = new TelaCadastroProduto(new javax.swing.JFrame(), true);
+        telaCadastroProduto.setVisible(true);
+    }//GEN-LAST:event_jMenuItemProdutoActionPerformed
+
+    private void jMenuItemSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSairActionPerformed
+        dispose();
+    }//GEN-LAST:event_jMenuItemSairActionPerformed
 
     /**
      * @param args the command line arguments
