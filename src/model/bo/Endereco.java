@@ -1,23 +1,23 @@
 package model.bo;
+
 public class Endereco {
+    
     private int id;
     private String cep;
     private String logradouro;
     private char status;
     
-    private Bairro bairro;
     private Cidade cidade;
+    private Bairro bairro;
 
     public Endereco() {
     }
 
-    public Endereco(int id, String cep, String logradouro, char status, Bairro bairro, Cidade cidade) {
+    public Endereco(int id, String cep, String logradouro, char status) {
         this.id = id;
         this.cep = cep;
         this.logradouro = logradouro;
         this.status = status;
-        this.bairro = bairro;
-        this.cidade = cidade;
     }
 
     public int getId() {
@@ -52,14 +52,6 @@ public class Endereco {
         this.status = status;
     }
 
-    public Bairro getBairro() {
-        return bairro;
-    }
-
-    public void setBairro(Bairro bairro) {
-        this.bairro = bairro;
-    }
-
     public Cidade getCidade() {
         return cidade;
     }
@@ -68,17 +60,21 @@ public class Endereco {
         this.cidade = cidade;
     }
 
+    public Bairro getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(Bairro bairro) {
+        this.bairro = bairro;
+    }
+
     @Override
     public String toString() {
-        return this.getId() + ", " 
-                + this.getCep() + ", "
+        return  this.getCep()+ ", " 
                 + this.getLogradouro() + ", " 
+                + this.getCep() + ", "
                 + this.bairro.getDescricao()
                 + this.cidade.getDescricao()
                 + this.getStatus();
-    }
-    
-    
-    
-    
+    } 
 }
