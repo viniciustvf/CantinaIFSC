@@ -10,7 +10,6 @@ public abstract class Pessoa {
     private String email;
     private char status;
     private String complementoEndereco;
-    
     private Endereco endereco;
 
     public Pessoa() {
