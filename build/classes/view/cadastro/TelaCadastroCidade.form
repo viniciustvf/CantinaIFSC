@@ -249,13 +249,26 @@
         <Component class="javax.swing.JComboBox" name="jComboBox1">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
+              <StringArray count="16">
+                <StringItem index="0" value="SC"/>
+                <StringItem index="1" value="PR"/>
+                <StringItem index="2" value="SP"/>
+                <StringItem index="3" value="RS"/>
+                <StringItem index="4" value="PE"/>
+                <StringItem index="5" value="PA"/>
+                <StringItem index="6" value="RJ"/>
+                <StringItem index="7" value="ES"/>
+                <StringItem index="8" value="MT"/>
+                <StringItem index="9" value="MS"/>
+                <StringItem index="10" value="DF"/>
+                <StringItem index="11" value="BA"/>
+                <StringItem index="12" value="PI"/>
+                <StringItem index="13" value="MA"/>
+                <StringItem index="14" value="AM"/>
+                <StringItem index="15" value="AC"/>
               </StringArray>
             </Property>
+            <Property name="selectedIndex" type="int" value="-1"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>

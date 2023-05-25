@@ -142,7 +142,8 @@ public class TelaCadastroCidade extends javax.swing.JDialog {
                 .addGap(78, 78, 78))
         );
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SC", "PR", "SP", "RS", "PE", "PA", "RJ", "ES", "MT", "MS", "DF", "BA", "PI", "MA", "AM", "AC" }));
+        jComboBox1.setSelectedIndex(-1);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
